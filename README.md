@@ -14,7 +14,7 @@ The frameworks are LangGraph, CrewAI, LlamaIndex, Agno, OpenAI Agents SDK, Googl
 
 ## What survived
 
-The candidate had eight fields: `name`, `description`, Markdown instructions, `model.requires`, `model.prefers`, Agent Skills, Agent Plugins, `delegates`.
+The candidate had eight fields: `name`, `description`, Markdown instructions, `model.requires`, `model.prefers`, Agent Skills, Agent Plugins, `delegates`. The evidence removed two of them and failed one framework on the core: `model.prefers` turned out to be deployment policy, `delegates` hid six mechanisms, and CrewAI fuses name, description, and instructions into one prompt template.
 
 ```text
 Required     name, Markdown instructions
